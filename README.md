@@ -1,3 +1,30 @@
+
+
+
+My Api Key = 43f9e3879d634663391d486f1ccfdc35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 06 Server-Side APIs: Weather Dashboard
 
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and 
