@@ -18,9 +18,11 @@
     <header class="lead">
         <h1>Weather Dashboard</h1>
     </header>
-    <aside>
-        <h4>Search for a city:</h4>
-        <input type="text" placeholder="Search..">
+    <aside >
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for a city..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
         <div class="list-group d-flex justify-content-center ">
             <a href="btnAustin" class="list-group-item list-group-item-action col-11">Austin</a>
             <a href="btnChicago" class="list-group-item list-group-item-action col-11">Chicago</a>
@@ -32,14 +34,53 @@
             <a href="btnAtlanta" class="list-group-item list-group-item-action col-11">Atlanta</a>
         </div>
     </aside>
-    <main>
-        <section>
+    <main  >
+        <section class="container-fluid" style="border: 1px solid black;">
             <div class="col-12"> 
-                <div>Austin</div>
+                <h2 style="font-size: 30px;">Austin</h2>
             </div>
             <div>
-                <div>5day forecast</div>
+                <div>Temperature: 90.9 F</div>
+                <p>humidity:41%</p>
+                <p>Wind Speed: 4.7 MPH</p>
+                <p>UV Index: 9.49</p>
             </div>
+        </section>
+        <section >
+            <h3>5-Day Forecast</h3>
+            <section >
+                <div class="dailyThumb">
+                    <h5>8/16/2019</h5>
+                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p>Temp:86.6F</p>
+                    <p>humdidity:43%</p>
+                </div>
+                <div class="dailyThumb">
+                    <h5>8/16/2019</h5>
+                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p>Temp:86.6F</p>
+                    <p>humdidity:43%</p>
+                </div>
+                <div class="dailyThumb">
+                    <h5>8/16/2019</h5>
+                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p>Temp:86.6F</p>
+                    <p>humdidity:43%</p>
+                </div>
+                <div class="dailyThumb">
+                    <h5>8/16/2019</h5>
+                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p>Temp:86.6F</p>
+                    <p>humdidity:43%</p>
+                </div>
+                <div class="dailyThumb">
+                    <h5>8/16/2019</h5>
+                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p>Temp:86.6F</p>
+                    <p>humdidity:43%</p>
+                </div>
+            </section>
+
         </section>
     </main>
     <script src="./assets/myjavascript.js"></script>>

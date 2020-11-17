@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -15,4 +15,23 @@ aside{
     margin: 0;
     width: 25vw;
     background-color: #eeeeee;
+    float: left;
+}
+main{
+    margin: 10px;
+    width: 70vw;
+    float: left;
+}
+.dailyThumb{
+    width: 15%;
+    background-color: dodgerblue;
+    border-radius: 10%;
+    color: white;
+    padding: 1vh;
+    float: left;
+    margin: 1vw;
+    
+    
+    
+    
 }
