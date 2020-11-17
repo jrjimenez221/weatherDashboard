@@ -20,64 +20,67 @@
     </header>
     <aside >
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search for a city..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input id="userInput" class="form-control mr-sm-2" type="search" placeholder="Search for a city..." aria-label="Search">
+            <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <div class="list-group d-flex justify-content-center ">
-            <a href="btnAustin" class="list-group-item list-group-item-action col-11">Austin</a>
-            <a href="btnChicago" class="list-group-item list-group-item-action col-11">Chicago</a>
-            <a href="btnNewYork" class="list-group-item list-group-item-action col-11">New York</a>
-            <a href="btnOrlando" class="list-group-item list-group-item-action col-11">Orlando</a>
-            <a href="btnSanFrancisco" class="list-group-item list-group-item-action col-11">San Francisco</a>
-            <a href="btnSeattle" class="list-group-item list-group-item-action col-11">Seattle</a>
-            <a href="btnDenver" class="list-group-item list-group-item-action col-11">Denver</a>
-            <a href="btnAtlanta" class="list-group-item list-group-item-action col-11">Atlanta</a>
+            <a href="#" id="btnDallas" class="list-group-item list-group-item-action col-11">Dallas</a>
+            <a href="#" id="btnAustin" class="list-group-item list-group-item-action col-11">Austin</a>
+            <a href="#" id="btnChicago" class="list-group-item list-group-item-action col-11">Chicago</a>
+            <a href="#" id="btnNewYork" class="list-group-item list-group-item-action col-11">New York</a>
+            <a href="#" id="btnOrlando" class="list-group-item list-group-item-action col-11">Orlando</a>
+            <a href="#" id="btnSanFrancisco" class="list-group-item list-group-item-action col-11">San Francisco</a>
+            <a href="#" id="btnSeattle" class="list-group-item list-group-item-action col-11">Seattle</a>
+            <a href="#" id="btnDenver" class="list-group-item list-group-item-action col-11">Denver</a>
+            <a href="#" id="btnAtlanta" class="list-group-item list-group-item-action col-11">Atlanta</a>
         </div>
     </aside>
     <main  >
         <section class="container-fluid" style="border: 1px solid black;">
             <div class="col-12"> 
-                <h2 style="font-size: 30px;">Austin</h2>
+                <h2 id="chosenCity" style="font-size: 30px;" >City Name & Date</h2>
             </div>
             <div>
-                <div>Temperature: 90.9 F</div>
-                <p>humidity:41%</p>
-                <p>Wind Speed: 4.7 MPH</p>
-                <p>UV Index: 9.49</p>
+                <p id="todayTemp">Temperature: 90.9 F</p>
+                <p id="todayHumid">humidity:41%</p>
+                <p id="todayWind">Wind Speed: 4.7 MPH</p>
+                <!-- Could not find the uv index in the provided json. Probably user error but I opted out of using it.
+                    <p id="todayUv">UV Index: 9.49</p>
+                -->
             </div>
         </section>
         <section >
             <h3>5-Day Forecast</h3>
             <section >
                 <div class="dailyThumb">
-                    <h5>8/16/2019</h5>
-                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
-                    <p>Temp:86.6F</p>
-                    <p>humdidity:43%</p>
+                    <h5 id="tomorDate">Tomorrow</h5>
+                    <img id="tomorIcon" src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p id="tomorTemp">Temp:86.6F</p>
+                    <p id="tomorHumid">humdidity:43%</p>
                 </div>
                 <div class="dailyThumb">
-                    <h5>8/16/2019</h5>
-                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
-                    <p>Temp:86.6F</p>
-                    <p>humdidity:43%</p>
+                    <h5 id="2dayDate">2-Days Later</h5>
+                    <img id="2dayIcon" src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p id="2dayTemp">Temp:86.6F</p>
+                    <p id="2dayHumid">humdidity:43%</p>
                 </div>
                 <div class="dailyThumb">
-                    <h5>8/16/2019</h5>
-                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
-                    <p>Temp:86.6F</p>
-                    <p>humdidity:43%</p>
+                    <h5 id="3dayDate">3-Days Later</h5>
+                    <img id="3dayIcon" src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p id="3dayTemp">Temp:86.6F</p>
+                    <p id="3dayHumid">humdidity:43%</p>
                 </div>
                 <div class="dailyThumb">
-                    <h5>8/16/2019</h5>
-                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
-                    <p>Temp:86.6F</p>
-                    <p>humdidity:43%</p>
+                    <h5 id="4dayDate">4-Days Later</h5>
+                    <img id="4dayIcon" src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p id="4dayTemp">Temp:86.6F</p>
+                    <p id="4dayHumid">humdidity:43%</p>
                 </div>
                 <div class="dailyThumb">
-                    <h5>8/16/2019</h5>
-                    <img src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
-                    <p>Temp:86.6F</p>
-                    <p>humdidity:43%</p>
+                    <h5 id="5dayDate">5-Days Later</h5>
+                    <img id="5dayIcon" src="./assets/06-server-side-apis-homework-demo.png" height="50" width="50">
+                    <p id="5dayTemp">Temp:86.6F</p>
+                    <p id="5dayHumid">humdidity:43%</p>
                 </div>
             </section>
 
